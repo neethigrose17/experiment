@@ -1,0 +1,12 @@
+services:
+
+  postgres-db-experiment:
+    container_name: postgres-experiment
+    image: postgres # use latest official postgres version
+    restart: always
+    environment:
+      POSTGRES_USER: experiment
+      POSTGRES_PASSWORD: experiment
+      POSTGRES_DB: experiment-db
+    ports:
+      - "5432:5432"

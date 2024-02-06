@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/experiment-db
+    username: experiment
+    password: experiment
+    driver-class-name: org.postgresql.Driver
+    connectionProperties:
+      sslFactory: org.postgresql.ssl.DefaultJavaSSLFactory
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
