@@ -1,6 +1,6 @@
-package com.example.experiment.persistence.character;
+package com.example.experiment.character.repository;
 
-import org.assertj.core.api.AssertionsForClassTypes;
+import com.example.experiment.character.entity.CharacterEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

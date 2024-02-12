@@ -1,10 +1,13 @@
-package com.example.experiment.persistence.character;
+package com.example.experiment.character.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@ToString
 @Builder
 @Entity
 @Table(name = "character")
