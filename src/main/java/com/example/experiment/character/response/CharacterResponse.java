@@ -11,5 +11,8 @@ public class CharacterResponse {
     private Long id;
     private String name;
     private Integer age;
+    private String sex;
     private String species;
+
+    private int position;
 }

@@ -24,7 +24,9 @@ public class CharacterRepositoryTest {
                 .id(1L)
                 .name("Sarra")
                 .age(29)
+                .sex("female")
                 .species("human")
+                .position(0)
                 .build();
 
         assertThat(actual).usingRecursiveComparison().isEqualTo(expected);
@@ -45,7 +47,9 @@ public class CharacterRepositoryTest {
                 .id(1L)
                 .name("Sarra")
                 .age(29)
+                .sex("female")
                 .species("human")
+                .position(0)
                 .build();
 
         assertThat(actual).usingRecursiveComparison().isEqualTo(expected);

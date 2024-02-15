@@ -19,6 +19,13 @@ public class CharacterEntity {
 
     private String name;
     private Integer age;
+    private String sex;
     private String species;
 
+
+    private int position;
+
+    void move(int change) {
+        setPosition(position + change);
+    }
 }

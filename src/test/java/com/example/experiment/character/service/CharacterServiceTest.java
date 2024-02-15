@@ -28,7 +28,9 @@ public class CharacterServiceTest {
                 .id(1L)
                 .name("Sarra")
                 .age(29)
+                .sex("female")
                 .species("human")
+                .position(0)
                 .build();
 
         when(characterJpaRepository.findByName("Sarra")).thenReturn(entity);
@@ -39,7 +41,9 @@ public class CharacterServiceTest {
                 .id(1L)
                 .name("Sarra")
                 .age(29)
+                .sex("female")
                 .species("human")
+                .position(0)
                 .build();
 
         assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);

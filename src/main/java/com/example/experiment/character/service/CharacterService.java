@@ -19,7 +19,9 @@ public class CharacterService {
                 .id(entity.getId())
                 .name(entity.getName())
                 .age(entity.getAge())
+                .sex(entity.getSex())
                 .species(entity.getSpecies())
+                .position(entity.getPosition())
                 .build();
     }
 
