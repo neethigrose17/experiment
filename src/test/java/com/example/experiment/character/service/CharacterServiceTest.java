@@ -48,4 +48,31 @@ public class CharacterServiceTest {
 
         assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);
     }
+
+    @Test
+    void moveCharacter_shouldMoveCharacter() {
+        CharacterEntity entity = CharacterEntity.builder()
+                .id(1L)
+                .name("Sarra")
+                .age(29)
+                .sex("female")
+                .species("human")
+                .position(0)
+                .build();
+
+        when(characterJpaRepository.findByName("Sarra")).thenReturn(entity);
+
+        CharacterResponse response = service.moveCharacter("Sarra", 3);
+
+        CharacterResponse expectedResponse = CharacterResponse.builder()
+                .id(1L)
+                .name("Sarra")
+                .age(29)
+                .sex("female")
+                .species("human")
+                .position(3)
+                .build();
+
+        assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);
+    }
 }

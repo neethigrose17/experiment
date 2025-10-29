@@ -9,4 +9,4 @@ services:
       POSTGRES_PASSWORD: experiment
       POSTGRES_DB: experiment-db
     ports:
-      - "5432:5432"
+      - "7777:5432"

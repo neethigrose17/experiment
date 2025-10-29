@@ -25,4 +25,21 @@ public class CharacterService {
                 .build();
     }
 
+    public CharacterResponse moveCharacter(String name, int change) {
+        CharacterEntity entity = characterJpaRepository.findByName(name);
+
+        entity.move(change);
+
+        CharacterEntity movedEntity = characterJpaRepository.findByName(name);
+
+        return CharacterResponse.builder()
+                .id(movedEntity.getId())
+                .name(movedEntity.getName())
+                .age(movedEntity.getAge())
+                .sex(movedEntity.getSex())
+                .species(movedEntity.getSpecies())
+                .position(movedEntity.getPosition())
+                .build();
+    }
+
 }

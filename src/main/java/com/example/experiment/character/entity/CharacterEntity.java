@@ -25,7 +25,7 @@ public class CharacterEntity {
 
     private int position;
 
-    void move(int change) {
+    public void move(int change) {
         setPosition(position + change);
     }
 }
