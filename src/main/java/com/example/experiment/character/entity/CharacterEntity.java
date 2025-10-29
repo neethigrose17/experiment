@@ -17,7 +17,7 @@ public class CharacterEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String asdlkfjasl;
+    private String name;
     private Integer age;
     private String sex;
     private String species;
